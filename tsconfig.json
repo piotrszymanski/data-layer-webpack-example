@@ -5,6 +5,18 @@
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es5",
-    "allowJs": true
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "es2015", "dom", "es2016.array.include"],
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules"
+    ],
+    "types": [
+      "core-js",
+      "node",
+      "zone.js"
+    ]
   }
 }

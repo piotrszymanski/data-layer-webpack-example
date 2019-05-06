@@ -1,57 +1,28 @@
-Webpack 4 + TypeScript starter
-------------------------------
+Example of data-layer as a standalone module with Webpack
+---------------------------------------------------------
 
-[![Build Status](https://travis-ci.org/juristr/webpack-typescript-starter.svg?branch=master)](https://travis-ci.org/juristr/webpack-typescript-starter)
+Example of using data-layer as a standalone library with WebPack.
+Note that `data-layer` itself is not provided.
 
-This is by far no sophisticated starter or whatever. The goal is to get the simplest possible setup to get you started with Webpack 4 and TypeScript. You can then start from here and add further stuff you need, such as SASS compilation, add framework specific stuff etc.
+## Instructions
 
-Also check out the official Webpack 4 docs for a proper TypeScript setup: https://webpack.js.org/guides/typescript/
-
-_Note, this is still a WIP. Contributions/suggestions are welcome :smiley:_
-
-## Features
-
-- [x] Webpack 4
-- [x] TypeScript 2 compilation
-- [x] ts-lint
-- [x] Webpack Development Server
-- [x] Karma and Jasmine test execution
-
-## How to use
-
-Just clone it and get going.
+You need to have `node` and `npm` installed. Then, do the following:
 
 ```
-# --depth 1 removes all but one .git commit history
-$ git clone --depth=1 https://github.com/juristr/webpack-typescript-starter.git <your-project-name>
+# Clone the repository.
+$ git clone --depth=1 https://github.com/piotrszymanski/data-layer-webpack-example.git data-layer-example
 
-# change directory to your project
-cd  <your-project-name>
+# Change into data-layer-example.
+cd data-layer-example
 
-# Maybe remove the `.git` directory and start with a fresh one.
+# Put a copy of data-layer-0.1.0.tgz into this folder.
 
-# install all dependencies.
-$ npm i
+# Install project dependencies.
+npm i
 
-# Start developing and serve your app:
+# Start the built-in web server.
 npm start
-
-# Build your app without minification: 
-npm run build
-
-# Build your app with minification: 
-npm run build.prod
-
-# run unit tests:
-npm run test
 ```
-## Contributions
 
-Of course! Open an issue and let's discuss :smiley:.
-
-## Links and other useful stuff
-
-Similar projects that could be a point of inspiration:
-
-- [krasimir/webpack-library-starter](https://github.com/krasimir/webpack-library-starter)
+You can then open a web browser and go to `localhost:9000`. You should see a page saying "Test".
 

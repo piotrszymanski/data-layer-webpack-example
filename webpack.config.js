@@ -17,7 +17,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['.ts', '.js'],
+        extensions: ['.js', '.ts'],
         modules: [
             ROOT,
             'node_modules'
@@ -53,6 +53,14 @@ module.exports = {
     },
 
     devtool: 'cheap-module-source-map',
-    devServer: {}
+    devServer: {
+        proxy: {
+            '/maconomy-api': {
+                target: 'http://appltestsys4.ads.deltek.com:24534',
+                pathRewrite: {'^/maconomy-api' : ''},
+                headers: { 'Maconomy-Forwarded-Base-Path': '/maconomy-api' }
+            }
+        }
+    }
 };
 

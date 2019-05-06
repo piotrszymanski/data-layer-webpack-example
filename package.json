@@ -9,8 +9,25 @@
     "test": "karma start karma.config.js"
   },
   "private": true,
+  "dependencies": {
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/http": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "core-js": "^2.5.4",
+    "data-layer": "file:data-layer-0.1.0.tgz",
+    "lodash": "^4.17.2",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "^5.5.5",
+    "tslib": "^1.9.0",
+    "zone.js": "^0.8.16"
+  },
   "devDependencies": {
+    "@types/core-js": "^2.5.0",
     "@types/jasmine": "2.8.7",
+    "@types/lodash": "^4.14.123",
     "@types/node": "7.0.0",
     "awesome-typescript-loader": "5.2.0",
     "jasmine-core": "3.1.0",
@@ -21,7 +38,7 @@
     "source-map-loader": "0.2.3",
     "tslint": "5.10.0",
     "tslint-loader": "3.6.0",
-    "typescript": "2.8.3",
+    "typescript": "^3.1.6",
     "webpack": "4.12.0",
     "webpack-cli": "3.0.8",
     "webpack-dev-server": "3.1.4"
