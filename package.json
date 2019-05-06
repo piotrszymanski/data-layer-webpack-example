@@ -1,7 +1,6 @@
 {
-  "name": "webpack-typescript-starter",
+  "name": "data-layer-webpack-example",
   "version": "0.0.1",
-  "description": "A simple Webpack 4 starter with TypeScript transpilation",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --port 9000 --inline --progress --profile --colors --watch --content-base src/ --mode development",
@@ -9,13 +8,7 @@
     "build.prod": "webpack --config webpack.config.js -p",
     "test": "karma start karma.config.js"
   },
-  "keywords": [
-    "webpack",
-    "webpack4",
-    "typescript"
-  ],
-  "author": "Juri Strumpflohner",
-  "license": "ISC",
+  "private": true,
   "devDependencies": {
     "@types/jasmine": "2.8.7",
     "@types/node": "7.0.0",
